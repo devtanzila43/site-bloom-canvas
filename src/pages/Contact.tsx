@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import heroContact from "@/assets/hero-contact.jpg";
 
 const Contact = () => {
   const { toast } = useToast();
