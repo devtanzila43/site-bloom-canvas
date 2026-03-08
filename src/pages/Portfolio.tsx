@@ -1,14 +1,20 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import heroPortfolio from "@/assets/hero-portfolio.jpg";
+import imgTechvista from "@/assets/portfolio-techvista.jpg";
+import imgGlobaltrade from "@/assets/portfolio-globaltrade.jpg";
+import imgBrightpath from "@/assets/portfolio-brightpath.jpg";
+import imgDataflow from "@/assets/portfolio-dataflow.jpg";
+import imgMedcore from "@/assets/portfolio-medcore.jpg";
+import imgEcoventures from "@/assets/portfolio-ecoventures.jpg";
 
 const projects = [
-  { title: "TechVista Platform Redesign", category: "Digital Transformation", result: "+40% Revenue" },
-  { title: "GlobalTrade Market Expansion", category: "Strategy Consulting", result: "3 New Markets" },
-  { title: "BrightPath Brand Launch", category: "Brand & Design", result: "+120% Engagement" },
-  { title: "DataFlow Analytics Suite", category: "Analytics & BI", result: "10x Faster Reporting" },
-  { title: "MedCore Process Automation", category: "Operations", result: "60% Cost Reduction" },
-  { title: "EcoVentures Digital Platform", category: "Custom Solutions", result: "50K+ Users" },
+  { title: "TechVista Platform Redesign", category: "Digital Transformation", result: "+40% Revenue", image: imgTechvista },
+  { title: "GlobalTrade Market Expansion", category: "Strategy Consulting", result: "3 New Markets", image: imgGlobaltrade },
+  { title: "BrightPath Brand Launch", category: "Brand & Design", result: "+120% Engagement", image: imgBrightpath },
+  { title: "DataFlow Analytics Suite", category: "Analytics & BI", result: "10x Faster Reporting", image: imgDataflow },
+  { title: "MedCore Process Automation", category: "Operations", result: "60% Cost Reduction", image: imgMedcore },
+  { title: "EcoVentures Digital Platform", category: "Custom Solutions", result: "50K+ Users", image: imgEcoventures },
 ];
 
 const Portfolio = () => (
