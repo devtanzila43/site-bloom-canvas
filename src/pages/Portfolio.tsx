@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import heroPortfolio from "@/assets/hero-portfolio.jpg";
 
 const projects = [
   { title: "TechVista Platform Redesign", category: "Digital Transformation", result: "+40% Revenue" },
