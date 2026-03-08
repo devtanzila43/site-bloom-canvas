@@ -12,7 +12,9 @@ const team = [
 const About = () => (
   <>
     {/* Hero */}
-    <section className="gradient-hero text-primary-foreground section-padding pt-32">
+    <section className="relative text-primary-foreground section-padding pt-32 overflow-hidden">
+      <img src={heroAbout} alt="" className="absolute inset-0 w-full h-full object-cover" />
+      <div className="absolute inset-0 bg-primary/80" />
       <div className="max-w-7xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-2xl">
           <span className="text-accent font-medium text-sm tracking-widest uppercase">About Us</span>
