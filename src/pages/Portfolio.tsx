@@ -33,7 +33,7 @@ const Portfolio = () => (
 
     <section className="section-padding bg-background">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {projects.map(({ title, category, result }, i) => (
+        {projects.map(({ title, category, result, image }, i) => (
           <motion.div
             key={title}
             initial={{ opacity: 0, y: 20 }}
