@@ -39,7 +39,7 @@ const BlogPreview = () => (
             transition={{ delay: i * 0.1 }}
           >
             <Link to="/blog" className="block bg-card rounded-lg overflow-hidden shadow-card hover:shadow-card-hover transition-shadow group">
-              <div className="h-48 bg-muted" />
+              <img src={image} alt={title} className="h-48 w-full object-cover" />
               <div className="p-6">
                 <span className="text-xs text-accent font-medium uppercase tracking-wide">{category}</span>
                 <h3 className="font-heading text-lg text-foreground mt-2 mb-3 group-hover:text-accent transition-colors">{title}</h3>

@@ -37,7 +37,7 @@ const Blog = () => (
             transition={{ delay: i * 0.08 }}
             className="group bg-card rounded-lg overflow-hidden shadow-card hover:shadow-card-hover transition-shadow"
           >
-            <div className="h-44 bg-muted" />
+            <img src={image} alt={title} className="h-44 w-full object-cover" />
             <div className="p-6">
               <div className="flex items-center justify-between mb-2">
                 <span className="text-xs text-accent font-medium uppercase tracking-wide">{category}</span>
