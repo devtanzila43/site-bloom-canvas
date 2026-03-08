@@ -42,7 +42,7 @@ const Portfolio = () => (
             transition={{ delay: i * 0.08 }}
             className="group bg-card rounded-lg overflow-hidden shadow-card hover:shadow-card-hover transition-shadow"
           >
-            <div className="h-48 bg-muted" />
+            <img src={image} alt={title} className="h-48 w-full object-cover" />
             <div className="p-6">
               <span className="text-xs text-accent font-medium uppercase tracking-wide">{category}</span>
               <h3 className="font-heading text-lg text-foreground mt-2 mb-2 flex items-center gap-1 group-hover:text-accent transition-colors">
