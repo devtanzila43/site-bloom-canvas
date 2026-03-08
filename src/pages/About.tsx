@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Target, Eye, Users2, Award } from "lucide-react";
+import heroAbout from "@/assets/hero-about.jpg";
 
 const team = [
   { name: "Alexandra Hart", role: "CEO & Founder", bio: "20+ years leading enterprise transformations across Fortune 500 companies." },
@@ -11,8 +12,10 @@ const team = [
 const About = () => (
   <>
     {/* Hero */}
-    <section className="gradient-hero text-primary-foreground section-padding pt-32">
-      <div className="max-w-7xl mx-auto">
+    <section className="relative text-primary-foreground section-padding pt-32 overflow-hidden">
+      <img src={heroAbout} alt="" className="absolute inset-0 w-full h-full object-cover" />
+      <div className="absolute inset-0 bg-primary/80" />
+      <div className="max-w-7xl mx-auto relative z-10">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-2xl">
           <span className="text-accent font-medium text-sm tracking-widest uppercase">About Us</span>
           <h1 className="text-4xl md:text-5xl mt-2 mb-6">Our Story, Our Mission</h1>
