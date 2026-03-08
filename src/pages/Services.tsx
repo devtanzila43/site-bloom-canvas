@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Lightbulb, Code2, BarChart3, Palette, Settings, Globe } from "lucide-react";
+import heroServices from "@/assets/hero-services.jpg";
 
 const services = [
   { icon: Lightbulb, title: "Strategy Consulting", desc: "We analyze market dynamics, competitive landscapes, and internal capabilities to craft strategies that drive sustainable growth." },
