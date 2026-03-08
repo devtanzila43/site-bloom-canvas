@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Target, Eye, Users2, Award } from "lucide-react";
+import heroAbout from "@/assets/hero-about.jpg";
 
 const team = [
   { name: "Alexandra Hart", role: "CEO & Founder", bio: "20+ years leading enterprise transformations across Fortune 500 companies." },
