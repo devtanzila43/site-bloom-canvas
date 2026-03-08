@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import heroFaq from "@/assets/hero-faq.jpg";
 
 const faqs = [
   { q: "What industries does ApexCorp serve?", a: "We work across technology, finance, healthcare, retail, manufacturing, and professional services. Our multidisciplinary approach allows us to adapt to any industry context." },
