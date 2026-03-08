@@ -1,11 +1,14 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import blogDigital from "@/assets/blog-digital-transformation.jpg";
+import blogData from "@/assets/blog-data-driven.jpg";
+import blogRemote from "@/assets/blog-remote-collab.jpg";
 
 const posts = [
-  { title: "5 Digital Transformation Trends for 2026", category: "Technology", date: "Mar 5, 2026" },
-  { title: "Building a Data-Driven Culture", category: "Strategy", date: "Feb 20, 2026" },
-  { title: "The Future of Remote Collaboration", category: "Insights", date: "Feb 10, 2026" },
+  { title: "5 Digital Transformation Trends for 2026", category: "Technology", date: "Mar 5, 2026", image: blogDigital },
+  { title: "Building a Data-Driven Culture", category: "Strategy", date: "Feb 20, 2026", image: blogData },
+  { title: "The Future of Remote Collaboration", category: "Insights", date: "Feb 10, 2026", image: blogRemote },
 ];
 
 const BlogPreview = () => (
@@ -27,7 +30,7 @@ const BlogPreview = () => (
       </motion.div>
 
       <div className="grid md:grid-cols-3 gap-8">
-        {posts.map(({ title, category, date }, i) => (
+        {posts.map(({ title, category, date, image }, i) => (
           <motion.div
             key={title}
             initial={{ opacity: 0, y: 20 }}
@@ -36,7 +39,7 @@ const BlogPreview = () => (
             transition={{ delay: i * 0.1 }}
           >
             <Link to="/blog" className="block bg-card rounded-lg overflow-hidden shadow-card hover:shadow-card-hover transition-shadow group">
-              <div className="h-48 bg-muted" />
+              <img src={image} alt={title} className="h-48 w-full object-cover" />
               <div className="p-6">
                 <span className="text-xs text-accent font-medium uppercase tracking-wide">{category}</span>
                 <h3 className="font-heading text-lg text-foreground mt-2 mb-3 group-hover:text-accent transition-colors">{title}</h3>
