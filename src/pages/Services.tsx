@@ -13,8 +13,10 @@ const services = [
 
 const Services = () => (
   <>
-    <section className="gradient-hero text-primary-foreground section-padding pt-32">
-      <div className="max-w-7xl mx-auto">
+    <section className="relative text-primary-foreground section-padding pt-32 overflow-hidden">
+      <img src={heroServices} alt="" className="absolute inset-0 w-full h-full object-cover" />
+      <div className="absolute inset-0 bg-primary/80" />
+      <div className="max-w-7xl mx-auto relative z-10">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-2xl">
           <span className="text-accent font-medium text-sm tracking-widest uppercase">Services</span>
           <h1 className="text-4xl md:text-5xl mt-2 mb-6">Solutions That Drive Results</h1>
