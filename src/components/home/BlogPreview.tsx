@@ -30,7 +30,7 @@ const BlogPreview = () => (
       </motion.div>
 
       <div className="grid md:grid-cols-3 gap-8">
-        {posts.map(({ title, category, date }, i) => (
+        {posts.map(({ title, category, date, image }, i) => (
           <motion.div
             key={title}
             initial={{ opacity: 0, y: 20 }}
