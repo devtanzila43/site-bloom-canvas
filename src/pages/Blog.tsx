@@ -28,7 +28,7 @@ const Blog = () => (
 
     <section className="section-padding bg-background">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {articles.map(({ title, category, date, excerpt }, i) => (
+        {articles.map(({ title, category, date, excerpt, image }, i) => (
           <motion.div
             key={title}
             initial={{ opacity: 0, y: 20 }}
